@@ -1,0 +1,42 @@
+resource-packs:
+  # You can add as many resource packs as you want here.
+  # Each pack gets sent to players on join.
+  # Get the SHA-1 hash of your .zip file using:
+  #   certutil -hashfile YourPack.zip SHA1   (Windows)
+  #   sha1sum YourPack.zip                   (Linux/Mac)
+
+  minimace:
+    enabled: true
+    # Your Dropbox direct download link (dl=1 for direct download, not preview)
+    # If this doesn't work, try: https://dl.dropboxusercontent.com/scl/fi/exdfv7ywicqrsqm2ad68t/MiniMace_ResourcePack.zip?rlkey=l0geg9kuoh2pmlfgd6s7e5c45
+    url: "https://www.dropbox.com/scl/fi/exdfv7ywicqrsqm2ad68t/MiniMace_ResourcePack.zip?rlkey=l0geg9kuoh2pmlfgd6s7e5c45&st=rvcurx1k&dl=1"
+    # SHA-1 hash of MiniMace_ResourcePack.zip
+    hash: "76d6b3d5d961cb4b4a4219950c4b14e6890ddebf"
+    # Message shown in the resource pack prompt (supports & color codes)
+    prompt: "&4&lBloodbound Server &8| &cAccept to see custom textures!"
+    # If true, players MUST accept or they get kicked
+    required: true
+
+  # Example: add another pack later just by copying the block above
+  # futurepack:
+  #   enabled: true
+  #   url: "https://your-url-here.com/AnotherPack.zip"
+  #   hash: "PUT_SHA1_HERE"
+  #   prompt: "&4&lBloodbound Server &8| &cAccept for more textures!"
+  #   required: true
+
+settings:
+  # What to do when a player clicks "Decline"
+  kick-on-decline: true
+  kick-message: "&4&lBloodbound Server\n&cCustom textures are required to play.\n&7Rejoin and click &aAccept&7."
+
+  # What to do when the resource pack fails to download
+  kick-on-failed-download: true
+  kick-on-failed-download-message: "&4&lBloodbound Server\n&cResource pack failed to download.\n&7Check your connection and rejoin."
+
+  # Whether to re-send the prompt if a player rejoins after declining
+  re-prompt-on-rejoin: true
+
+  # Whether to send packs to Bedrock players (via Geyser/Floodgate)
+  # Set to false if you use Geyser and have separate Bedrock packs
+  send-to-bedrock: true

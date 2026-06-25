@@ -1,0 +1,14 @@
+name: BloodboundResourcePack
+version: 1.0.0
+main: com.bloodbound.resourcepack.BloodboundResourcePack
+api-version: '1.21'
+author: BloodboundDev
+commands:
+  bloodboundpack:
+    description: Manage Bloodbound resource packs
+    usage: /bloodboundpack <reload|status|send <player>>
+    permission: bloodboundpack.admin
+permissions:
+  bloodboundpack.admin:
+    default: op
+    description: Allows managing Bloodbound resource packs
