@@ -14,3 +14,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - run: mvn -B clean package
+    - name: Upload JAR artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: BloodboundResourcePack
+        path: target/*.jar
