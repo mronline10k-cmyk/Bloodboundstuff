@@ -1,4 +1,4 @@
-# BloodboundResourcePack Plugin
+# New BloodboundResourcePack Plugin
 
 A Minecraft Paper/Spigot plugin that sends custom resource packs to players on join with an approve/decline prompt. Players who decline get kicked with a custom message.
 
